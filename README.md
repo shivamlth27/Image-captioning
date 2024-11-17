@@ -52,13 +52,63 @@ This function is designed to:
 3. Translate the generated caption into a specified Indian language.
 4. Provide audio output of the translated caption, making it accessible to users with visual impairments.
 
+## Project Structure
 
- Image-Captioning/
-├── app.py
-├── reqirements.txt
-├── Multilingual Image Captioning and Speech Synthesis.ipynb
-├── static/
-│   ├── uploads/
-│   └── audio/
-└── templates/
-    └── index.html
+```
+Image-Captioning/
+├── app.py                     # Flask web application for serving the model and handling API requests
+├── requirements.txt           # List of dependencies required for the project
+├── Multilingual Image Captioning and Speech Synthesis.ipynb  # Jupyter notebook for testing and experimenting with models
+├── static/                    # Folder for static assets
+│   ├── uploads/               # Folder where uploaded images are stored
+│   └── audio/                 # Folder where generated audio files are stored
+└── templates/                 # Folder containing HTML templates
+    └── index.html             # Main landing page HTML file
+```
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/shivamlth27/Image-captioning.git
+   cd Image-Captioning
+   ```
+
+2. Create and activate a virtual environment (optional but recommended):
+   ```bash
+   python3 -m venv aiml
+   source aiml/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Application
+
+1. Run the Flask app:
+   ```bash
+   python app.py
+   ```
+
+   The application will start running locally on `http://127.0.0.1:5000/`.
+
+2. Open a web browser and visit the application to interact with the API.
+
+## Usage
+
+1. **Upload an Image**: Use the web interface to upload an image file or provide an image URL.
+2. **Generate Caption**: After uploading the image, the model will generate a caption for the image.
+3. **Translate the Caption**: You can select a target language, and the caption will be translated into that language.
+4. **Generate Speech**: The translated caption will be converted into speech, and an audio file will be provided for download.
+
+## Models Used
+
+- **Image Captioning**: `VisionEncoderDecoderModel` from Hugging Face (ViT + GPT-2)
+- **Translation**: IndicTrans (for multilingual translation)
+- **Speech Synthesis**: Google Text-to-Speech (gTTS)
+
+
