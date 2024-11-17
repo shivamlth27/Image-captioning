@@ -16,5 +16,4 @@ accelerate
 datasets
 sentencepiece
 gTTS
--e git+https://github.com/VarunGumma/IndicTransToolkit.git#egg=IndicTransToolkit
 gunicorn
