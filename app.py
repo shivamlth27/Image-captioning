@@ -231,7 +231,5 @@ def caption_image():
 def serve_audio(filename):
     return send_file(os.path.join(app.config['AUDIO_FOLDER'], filename))
 
-# -e git+https://github.com/VarunGumma/IndicTransToolkit.git#egg=IndicTransToolkit
-
 if __name__ == '__main__':
     app.run(debug=True,port=5000)
