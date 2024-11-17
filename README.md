@@ -1,5 +1,6 @@
 # Image-captioning
 Multilingual assistive model that helps visually impaired users by describing images in multiple Indian languages and narrating the descriptions via audio.
+
 ![Demo of Image Captioning](demo.gif)
 
 ## `caption_translate_speech` Function
