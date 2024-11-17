@@ -2,10 +2,8 @@
 Multilingual assistive model that helps visually impaired users by describing images in multiple Indian languages and narrating the descriptions via audio.
 
 <img src="Demo.gif" alt="Demo of Image Captioning" width="600" />
-<video width="700" controls>
-  <source src="Demo Video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/user-attachments/assets/e3de1cdc-ee37-46d3-8683-b83234dcd727
 
 ## `caption_translate_speech` Function
 
